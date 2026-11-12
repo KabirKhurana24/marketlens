@@ -1,0 +1,10 @@
+{
+  "name": "marketlens-real-estate-product-lab",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Multi-market real estate product lab with local prototype authentication and instant demo access.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}

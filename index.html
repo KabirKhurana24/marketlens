@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101a2c" />
+  <meta name="description" content="MarketLens is a synthetic-data product lab for diagnosing property marketplace conversion across MENA markets." />
+  <title>MarketLens — Real Estate Product Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="auth.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <section class="auth-screen" id="auth-screen" aria-label="MarketLens access">
+    <div class="auth-visual">
+      <div class="auth-visual-grid"></div>
+      <div class="auth-brand-lockup">
+        <div class="brand-mark"><span></span><span></span><span></span></div>
+        <div><div class="brand-name">market<span>lens</span></div><div class="brand-caption">REAL ESTATE PRODUCT LAB</div></div>
+      </div>
+      <div class="auth-visual-copy">
+        <div class="auth-eyebrow"><span class="auth-eyebrow-dot"></span> PROPERTY MARKETPLACE INTELLIGENCE</div>
+        <h1>Make every<br>market decision<br><em>count.</em></h1>
+        <p>One workspace to understand demand, improve listing quality and turn product hypotheses into measurable outcomes.</p>
+        <div class="auth-proof-grid">
+          <div><strong>05</strong><span>MENA markets</span></div>
+          <div><strong>04</strong><span>Product workspaces</span></div>
+          <div><strong>01</strong><span>Connected view</span></div>
+        </div>
+      </div>
+      <div class="auth-preview-card">
+        <div class="preview-card-top"><span class="preview-live"><i></i> MARKET PULSE</span><span>DEMO SNAPSHOT</span></div>
+        <div class="preview-card-title">Qualified leads</div>
+        <div class="preview-card-value">18,420 <span>↗ 8.6%</span></div>
+        <div class="preview-bars"><i style="height:36%"></i><i style="height:49%"></i><i style="height:43%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:77%"></i><i style="height:91%"></i><i style="height:72%"></i><i style="height:100%"></i><i style="height:84%"></i><i style="height:93%"></i><i style="height:100%"></i></div>
+        <div class="preview-card-foot"><span>WEEKLY PERFORMANCE</span><span>5 MARKETS</span></div>
+      </div>
+      <div class="auth-visual-footer"><span>BUILT FOR PRODUCT THINKERS</span><span>INDEPENDENT PORTFOLIO PROJECT · 2026</span></div>
+    </div>
+
+    <div class="auth-main">
+      <div class="auth-main-top"><span>Already have a workspace?</span><button type="button" id="auth-top-signin">Sign in <span>↗</span></button></div>
+      <div class="auth-card-wrap">
+        <div class="auth-mobile-brand">
+          <div class="brand-mark"><span></span><span></span><span></span></div>
+          <div><div class="brand-name">market<span>lens</span></div><div class="brand-caption">REAL ESTATE PRODUCT LAB</div></div>
+        </div>
+        <div class="auth-card">
+          <div class="auth-card-kicker"><span class="auth-lock-icon">✳</span><span>YOUR PRODUCT WORKSPACE</span></div>
+          <h2 id="auth-title">Welcome back.</h2>
+          <p class="auth-description" id="auth-description">Sign in to continue exploring marketplace performance.</p>
+          <form id="auth-form" novalidate>
+            <div class="auth-field" id="auth-name-wrap" hidden>
+              <label for="auth-name">FULL NAME</label>
+              <input id="auth-name" name="name" type="text" autocomplete="name" placeholder="Your name" />
+            </div>
+            <div class="auth-field">
+              <label for="auth-email">WORK EMAIL</label>
+              <div class="auth-input-wrap"><span class="field-icon">✉</span><input id="auth-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required /></div>
+            </div>
+            <div class="auth-field" id="auth-password-wrap">
+              <div class="auth-label-row"><label for="auth-password">PASSWORD</label><button type="button" class="auth-text-button" id="forgot-password">Forgot password?</button></div>
+              <div class="auth-input-wrap"><span class="field-icon">⌑</span><input id="auth-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required minlength="8" /><button type="button" class="password-toggle" id="password-toggle" aria-label="Show password">Show</button></div>
+              <span class="auth-field-help" id="password-help">Use at least 8 characters.</span>
+            </div>
+            <div class="auth-error" id="auth-error" role="alert" aria-live="polite"></div>
+            <button class="auth-submit" id="auth-submit" type="submit"><span id="auth-submit-label">Sign in to MarketLens</span><span>→</span></button>
+          </form>
+          <div class="auth-divider"><span></span><small>OR JUMP RIGHT IN</small><span></span></div>
+          <button class="demo-button" id="demo-button" type="button"><span class="demo-button-icon">▷</span><span><strong>Explore the live demo</strong><small>Open the workspace instantly · No account needed</small></span><b>↗</b></button>
+          <p class="auth-mode-switch" id="auth-mode-switch">New to MarketLens? <button type="button" id="auth-mode-toggle">Create an account</button></p>
+          <p class="auth-legal">By continuing, you agree to use this independent prototype with its fictional sample data. No Property Finder systems or data are connected.</p>
+        </div>
+        <div class="auth-main-bottom"><span>© 2026 MARKETLENS</span><span>INDEPENDENT PRODUCT CASE STUDY</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-mark"><span></span><span></span><span></span></div>
+        <div><div class="brand-name">market<span>lens</span></div><div class="brand-caption">REAL ESTATE PRODUCT LAB</div></div>
+      </div>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="overview"><span class="nav-icon">◫</span><span>Overview</span><kbd>01</kbd></button>
+        <button class="nav-item" data-page="markets"><span class="nav-icon">⌖</span><span>Market breakdown</span><kbd>02</kbd></button>
+        <button class="nav-item" data-page="listings"><span class="nav-icon">▤</span><span>Listing health</span><kbd>03</kbd></button>
+        <button class="nav-item" data-page="experiments"><span class="nav-icon">◈</span><span>Experiment lab</span><kbd>04</kbd></button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-icon">✳</div>
+        <div class="sidebar-card-title">Built to find the friction.</div>
+        <p>Turn marketplace signals into testable product bets.</p>
+        <span class="sidebar-card-tag">PRODUCT THINKING · 01</span>
+      </div>
+      <div class="profile-row">
+        <div class="avatar" id="profile-avatar">ML</div>
+        <div class="profile-copy"><strong id="profile-name">Product Lab</strong><small id="profile-subtitle">Demo workspace</small></div>
+        <button class="signout-button" id="signout-button" type="button" title="Sign out" aria-label="Sign out">↗</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="breadcrumb-current">Overview</strong></div>
+        <div class="topbar-right">
+          <div class="data-status"><span class="status-dot"></span> Synthetic demo data</div>
+          <button class="icon-button" id="about-button" aria-label="About this prototype" title="About this prototype">ⓘ</button>
+          <div class="account-chip"><div class="top-avatar" id="top-avatar">ML</div><span id="account-label">Demo</span><button type="button" id="top-signout" aria-label="Sign out" title="Sign out">⌄</button></div>
+        </div>
+      </header>
+
+      <section class="page page-active" id="page-overview">
+        <div class="page-heading">
+          <div>
+            <div class="eyebrow">DATA THROUGH 08 NOVEMBER 2026 <span class="eyebrow-line"></span> MENA MARKETPLACE</div>
+            <h1>Find the friction.<br><span>Unlock the growth.</span></h1>
+            <p class="page-subtitle">A product view of where property seekers drop off — and what to test next.</p>
+          </div>
+          <div class="heading-controls">
+            <label class="control-label" for="market-filter">MARKET</label>
+            <select id="market-filter" class="select-control">
+              <option value="All markets">All markets</option>
+              <option>Dubai</option><option>Cairo</option><option>Riyadh</option><option>Abu Dhabi</option><option>Doha</option>
+            </select>
+            <div class="range-switch" role="group" aria-label="Date range">
+              <button data-range="7" class="range-btn">7D</button>
+              <button data-range="30" class="range-btn active">30D</button>
+              <button data-range="90" class="range-btn">90D</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="metric-grid" id="metric-grid"></div>
+
+        <div class="content-grid primary-grid">
+          <article class="panel trend-panel">
+            <div class="panel-heading">
+              <div><div class="section-kicker">DEMAND → OUTCOME</div><h2>Lead generation trend</h2><p class="panel-subtitle">Weekly leads and qualified leads across the selected view.</p></div>
+              <div class="chart-legend"><span><i class="legend-dot leads-dot"></i>Leads</span><span><i class="legend-dot qualified-dot"></i>Qualified</span></div>
+            </div>
+            <div class="chart-summary" id="trend-summary"></div>
+            <div class="line-chart-wrap" id="lead-chart"></div>
+            <div class="chart-foot"><span>WEEK STARTING</span><span>Source: synthetic marketplace events</span></div>
+          </article>
+          <article class="panel funnel-panel">
+            <div class="panel-heading"><div><div class="section-kicker">CONVERSION FUNNEL</div><h2>Where intent leaks</h2><p class="panel-subtitle">From search visibility to a qualified enquiry.</p></div><span class="tiny-badge">LIVE FILTERS</span></div>
+            <div id="funnel-view" class="funnel-view"></div>
+            <div class="funnel-note"><span class="note-icon">↗</span><span id="funnel-note-text">A qualified lead is the outcome to optimise for — not just a form submission.</span></div>
+          </article>
+        </div>
+
+        <div class="content-grid secondary-grid">
+          <article class="panel market-panel">
+            <div class="panel-heading"><div><div class="section-kicker">FIVE-MARKET VIEW</div><h2>Market performance</h2><p class="panel-subtitle">Conversion differs by market. Compare before you generalise.</p></div><button class="text-button" data-go="markets">Explore markets <span>↗</span></button></div>
+            <div id="market-performance" class="market-performance"></div>
+          </article>
+          <article class="panel signals-panel">
+            <div class="panel-heading"><div><div class="section-kicker">PRODUCT SIGNALS</div><h2>What deserves attention</h2><p class="panel-subtitle">Evidence-led opportunities surfaced from the demo data.</p></div><span class="signal-count">03</span></div>
+            <div id="signal-list" class="signal-list"></div>
+          </article>
+        </div>
+        <div class="disclaimer-line"><span>ⓘ</span> All figures are fictional demo data created for this portfolio prototype. They do not represent Property Finder performance.</div>
+      </section>
+
+      <section class="page" id="page-markets">
+        <div class="page-heading compact-heading">
+          <div><div class="eyebrow">MARKET INTELLIGENCE <span class="eyebrow-line"></span> 5 MARKETS</div><h1>One platform.<br><span>Different realities.</span></h1><p class="page-subtitle">A market-level view of demand, lead quality, supply health and response speed.</p></div>
+          <div class="heading-controls"><label class="control-label" for="markets-range">TIME WINDOW</label><select id="markets-range" class="select-control"><option value="30">Last 30 days</option><option value="7">Last 7 days</option><option value="90">Last 90 days</option></select></div>
+        </div>
+        <div class="metric-grid" id="market-metric-grid"></div>
+        <article class="panel wide-panel">
+          <div class="panel-heading"><div><div class="section-kicker">MARKET COMPARISON</div><h2>Conversion and lead quality</h2><p class="panel-subtitle">Listing-view → lead conversion, with qualified-lead rate as the quality lens.</p></div><div class="chart-legend"><span><i class="legend-dot leads-dot"></i>View → lead</span><span><i class="legend-dot quality-dot"></i>Lead → qualified</span></div></div>
+          <div id="market-comparison" class="comparison-chart"></div>
+        </article>
+        <div class="content-grid market-detail-grid">
+          <article class="panel"><div class="panel-heading"><div><div class="section-kicker">MARKET SCORECARD</div><h2>Operating conditions</h2><p class="panel-subtitle">Supply quality and agent response are part of the product experience.</p></div></div><div class="table-wrap"><table class="data-table"><thead><tr><th>MARKET</th><th>ACTIVE LISTINGS</th><th>QUALITY SCORE</th><th>VERIFIED</th><th>STALE</th><th>MED. RESPONSE</th></tr></thead><tbody id="market-scorecard"></tbody></table></div></article>
+          <article class="panel context-panel"><div class="section-kicker">HOW TO READ THIS</div><h2>Localise the hypothesis.</h2><p>Dubai, Cairo and Riyadh may share a product surface, but the constraint behind conversion can be different.</p><div class="context-stat"><span class="context-number">01</span><div><strong>Demand</strong><small>Are people finding relevant inventory?</small></div></div><div class="context-stat"><span class="context-number">02</span><div><strong>Supply</strong><small>Can seekers trust and compare listings?</small></div></div><div class="context-stat"><span class="context-number">03</span><div><strong>Fulfilment</strong><small>Does a lead receive a useful response?</small></div></div></article>
+        </div>
+        <div class="disclaimer-line"><span>ⓘ</span> Synthetic data. Cross-market comparisons are illustrative, not market benchmarks.</div>
+      </section>
+
+      <section class="page" id="page-listings">
+        <div class="page-heading compact-heading">
+          <div><div class="eyebrow">SUPPLY-SIDE DIAGNOSTICS <span class="eyebrow-line"></span> LISTING QUALITY</div><h1>Better inventory.<br><span>Better decisions.</span></h1><p class="page-subtitle">Spot listings that may be undermining trust, discovery or lead conversion.</p></div>
+          <div class="listing-summary-card"><span class="summary-number" id="at-risk-count">—</span><span class="summary-label">LISTINGS NEEDING ATTENTION</span><small>From the 15-record demo sample</small></div>
+        </div>
+        <div class="listing-toolbar panel">
+          <div class="search-box"><span>⌕</span><input id="listing-search" type="search" placeholder="Search listing, market or ID..." /></div>
+          <div class="toolbar-right"><select id="listing-market" class="select-control"><option value="All markets">All markets</option><option>Dubai</option><option>Cairo</option><option>Riyadh</option><option>Abu Dhabi</option><option>Doha</option></select><select id="listing-health-filter" class="select-control"><option value="all">All health levels</option><option value="risk">Needs attention</option><option value="healthy">Healthy</option></select></div>
+        </div>
+        <article class="panel listing-table-panel">
+          <div class="panel-heading"><div><div class="section-kicker">LISTING AUDIT</div><h2>Inventory health queue</h2><p class="panel-subtitle">An explainable score based on completeness, verification, freshness, media and price fit.</p></div><div class="score-legend"><span class="score-dot good"></span>80+ Healthy <span class="score-dot warn"></span>60–79 Watch <span class="score-dot bad"></span>Below 60 At risk</div></div>
+          <div class="table-wrap"><table class="data-table listing-table"><thead><tr><th>LISTING</th><th>MARKET</th><th>ASKING PRICE</th><th>QUALITY</th><th>30D LEADS</th><th>QUALIFIED</th><th>ISSUE / STATUS</th><th></th></tr></thead><tbody id="listing-rows"></tbody></table></div>
+          <div class="table-footer"><span id="listing-count-label">Showing all sample listings</span><span>Sample size: 15 listings</span></div>
+        </article>
+        <div class="quality-method"><strong>Quality score methodology</strong><span>30% completeness · 20% photo coverage · 20% verification · 15% freshness · 15% price fit. Scores are illustrative and transparent, not a production ranking model.</span></div>
+        <div class="disclaimer-line"><span>ⓘ</span> Listing names, prices, performance and IDs are fictional.</div>
+      </section>
+
+      <section class="page" id="page-experiments">
+        <div class="page-heading compact-heading">
+          <div><div class="eyebrow">FROM INSIGHT TO IMPACT <span class="eyebrow-line"></span> EXPERIMENT DESIGN</div><h1>Don't ship opinions.<br><span>Test the hypothesis.</span></h1><p class="page-subtitle">Model the potential impact of improving listing-view → lead conversion.</p></div>
+          <div class="experiment-status"><span class="status-dot"></span> SIMULATION MODE <small>No live traffic or systems connected</small></div>
+        </div>
+        <div class="experiment-layout">
+          <div class="experiment-main">
+            <article class="panel experiment-setup">
+              <div class="panel-heading"><div><div class="section-kicker">01 / DEFINE THE TEST</div><h2 id="experiment-name">Listing detail contact-flow test</h2><p class="panel-subtitle">A lightweight experiment designed to reduce friction at the moment of intent.</p></div><span class="experiment-tag">PROPOSED A/B TEST</span></div>
+              <div class="hypothesis-box"><div class="hypothesis-icon">◎</div><div><span class="mini-label">HYPOTHESIS</span><p id="experiment-hypothesis">If we make the contact action clearer and reduce avoidable form friction, more high-intent listing viewers will become qualified leads.</p></div></div>
+              <div class="setup-grid"><div><span class="mini-label">CONTROL · A</span><div class="variant-card"><strong>Current contact flow</strong><p>Existing contact CTA and enquiry form. No change to the seeker journey.</p><span class="variant-pill">BASELINE</span></div></div><div><span class="mini-label">TREATMENT · B</span><div class="variant-card treatment"><strong id="treatment-title">Intent-first contact flow</strong><p id="treatment-copy">Prominent call / message choice, fewer required fields and context pre-filled from the listing.</p><span class="variant-pill treatment-pill">VARIANT</span></div></div></div>
+              <div class="test-spec-grid"><div><span class="mini-label">PRIMARY METRIC</span><strong>Qualified leads / listing views</strong></div><div><span class="mini-label">GUARDRAIL METRICS</span><strong>Unqualified rate · response SLA · spam rate</strong></div><div><span class="mini-label">RANDOMISATION</span><strong>50 / 50 seeker-level split</strong></div><div><span class="mini-label">DURATION</span><strong>2–4 weeks, then review power</strong></div></div>
+            </article>
+            <article class="panel simulator-panel">
+              <div class="panel-heading"><div><div class="section-kicker">02 / MODEL THE UPSIDE</div><h2>Impact simulator</h2><p class="panel-subtitle">Change the assumed relative lift and see the monthly outcome.</p></div><span class="tiny-badge">ILLUSTRATIVE MODEL</span></div>
+              <div class="sim-controls"><div class="sim-select"><label class="control-label" for="experiment-market">MARKET TO TEST</label><select id="experiment-market" class="select-control"><option>All markets</option><option>Dubai</option><option>Cairo</option><option>Riyadh</option><option>Abu Dhabi</option><option>Doha</option></select></div><div class="lift-control"><div class="lift-header"><label class="control-label" for="lift-slider">ASSUMED RELATIVE LIFT IN VIEW → LEAD</label><strong id="lift-value">+10%</strong></div><input type="range" id="lift-slider" min="1" max="25" value="10" step="1"><div class="range-labels"><span>+1%</span><span>+25%</span></div></div></div>
+              <div class="simulation-results" id="simulation-results"></div>
+              <div class="formula-note"><strong>Model:</strong> monthly listing views × current view-to-lead rate × assumed relative lift × qualified-lead rate. Assumes traffic and lead quality stay constant; it is not a forecast.</div>
+            </article>
+          </div>
+          <aside class="experiment-aside">
+            <article class="panel next-steps-panel"><div class="section-kicker">03 / RUN IT PROPERLY</div><h2>Before calling it a win.</h2><div class="step-list"><div class="step-item"><span>1</span><div><strong>Validate the event</strong><p>Confirm listing view, CTA click, submitted lead and qualified status are deduplicated and timestamped.</p></div></div><div class="step-item"><span>2</span><div><strong>Check sample size</strong><p>Calculate the minimum detectable effect using the real baseline rate and eligible traffic.</p></div></div><div class="step-item"><span>3</span><div><strong>Read the guardrails</strong><p>Reject a conversion lift if spam or unqualified leads rise, or agent response deteriorates.</p></div></div><div class="step-item"><span>4</span><div><strong>Roll out by market</strong><p>Ship only where the treatment wins; do not assume one market's result transfers to another.</p></div></div></div></article>
+            <article class="panel decision-panel"><div class="section-kicker">DECISION RULE</div><h2>What would change my mind?</h2><p>Ship only when the treatment improves qualified leads per 1,000 listing views with a statistically credible result and no material guardrail regression.</p><div class="decision-rule"><span class="decision-icon">✓</span><div><strong>Success</strong><small>Primary metric up; guardrails stable.</small></div></div><div class="decision-rule"><span class="decision-icon muted">×</span><div><strong>Stop / iterate</strong><small>Raw leads rise but lead quality falls.</small></div></div></article>
+          </aside>
+        </div>
+        <div class="disclaimer-line"><span>ⓘ</span> This is a scenario calculator, not a causal estimate. Real launch decisions require event validation, sample-size planning and an A/B test.</div>
+      </section>
+
+      <footer class="app-footer"><span>MARKETLENS <i>·</i> PRODUCT LAB</span><span>Built as an independent portfolio case study <i>·</i> 2026</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="about-modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="close-modal" aria-label="Close">×</button><div class="section-kicker">ABOUT THE PROTOTYPE</div><h2 id="modal-title">A product case, not a live portal.</h2><p>MarketLens is an independent portfolio prototype that explores how a property marketplace team could connect funnel performance, listing quality and lead outcomes across MENA markets.</p><div class="modal-facts"><div><span>DATA</span><strong>100% synthetic</strong></div><div><span>MARKETS</span><strong>5 illustrative markets</strong></div><div><span>INTEGRATIONS</span><strong>None connected</strong></div></div><p class="modal-note">It is not affiliated with Property Finder and does not use company data, branding or internal systems.</p><button class="primary-button" id="modal-done">Got it</button></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
